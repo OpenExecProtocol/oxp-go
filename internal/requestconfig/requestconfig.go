@@ -18,11 +18,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/oxp-go/internal"
-	"github.com/stainless-sdks/oxp-go/internal/apierror"
-	"github.com/stainless-sdks/oxp-go/internal/apiform"
-	"github.com/stainless-sdks/oxp-go/internal/apiquery"
-	"github.com/stainless-sdks/oxp-go/internal/param"
+	"github.com/OpenExecProtocol/oxp-go/internal"
+	"github.com/OpenExecProtocol/oxp-go/internal/apierror"
+	"github.com/OpenExecProtocol/oxp-go/internal/apiform"
+	"github.com/OpenExecProtocol/oxp-go/internal/apiquery"
+	"github.com/OpenExecProtocol/oxp-go/internal/param"
 )
 
 func getDefaultHeaders() map[string]string {

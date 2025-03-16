@@ -3,7 +3,7 @@
 package oxp
 
 import (
-	"github.com/stainless-sdks/oxp-go/internal/apierror"
+	"github.com/OpenExecProtocol/oxp-go/internal/apierror"
 )
 
 type Error = apierror.Error

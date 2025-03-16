@@ -6,8 +6,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/oxp-go/internal/requestconfig"
-	"github.com/stainless-sdks/oxp-go/option"
+	"github.com/OpenExecProtocol/oxp-go/internal/requestconfig"
+	"github.com/OpenExecProtocol/oxp-go/option"
 )
 
 // HealthService contains methods and other services that help with interacting

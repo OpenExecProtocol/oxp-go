@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/oxp-go/internal/param"
+	"github.com/OpenExecProtocol/oxp-go/internal/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc

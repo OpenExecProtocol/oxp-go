@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/oxp-go"
-	"github.com/stainless-sdks/oxp-go/internal/testutil"
-	"github.com/stainless-sdks/oxp-go/option"
+	"github.com/OpenExecProtocol/oxp-go"
+	"github.com/OpenExecProtocol/oxp-go/internal/testutil"
+	"github.com/OpenExecProtocol/oxp-go/option"
 )
 
 func TestHealthCheck(t *testing.T) {

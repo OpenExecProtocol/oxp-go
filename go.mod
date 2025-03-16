@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/oxp-go
+module github.com/OpenExecProtocol/oxp-go
 
 go 1.21
 

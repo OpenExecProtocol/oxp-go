@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/oxp-go"
-	"github.com/stainless-sdks/oxp-go/internal"
-	"github.com/stainless-sdks/oxp-go/option"
+	"github.com/OpenExecProtocol/oxp-go"
+	"github.com/OpenExecProtocol/oxp-go/internal"
+	"github.com/OpenExecProtocol/oxp-go/option"
 )
 
 type closureTransport struct {

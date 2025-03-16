@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/stainless-sdks/oxp-go/internal/apijson"
-	"github.com/stainless-sdks/oxp-go/internal/param"
-	"github.com/stainless-sdks/oxp-go/internal/requestconfig"
-	"github.com/stainless-sdks/oxp-go/option"
-	"github.com/stainless-sdks/oxp-go/shared"
+	"github.com/OpenExecProtocol/oxp-go/internal/apijson"
+	"github.com/OpenExecProtocol/oxp-go/internal/param"
+	"github.com/OpenExecProtocol/oxp-go/internal/requestconfig"
+	"github.com/OpenExecProtocol/oxp-go/option"
+	"github.com/OpenExecProtocol/oxp-go/shared"
 	"github.com/tidwall/gjson"
 )
 

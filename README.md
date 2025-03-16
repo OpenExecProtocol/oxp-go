@@ -1,6 +1,6 @@
 # Oxp Go API Library
 
-<a href="https://pkg.go.dev/github.com/stainless-sdks/oxp-go"><img src="https://pkg.go.dev/badge/github.com/stainless-sdks/oxp-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/OpenExecProtocol/oxp-go"><img src="https://pkg.go.dev/badge/github.com/OpenExecProtocol/oxp-go.svg" alt="Go Reference"></a>
 
 The Oxp Go library provides convenient access to [the Oxp REST
 API](https://openexecprotocol.org) from applications written in Go. The full API of this library can be found in [api.md](api.md).
@@ -9,17 +9,25 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
+<!-- x-release-please-start-version -->
+
 ```go
 import (
-	"github.com/stainless-sdks/oxp-go" // imported as oxp
+	"github.com/OpenExecProtocol/oxp-go" // imported as oxp
 )
 ```
 
+<!-- x-release-please-end -->
+
 Or to pin the version:
 
+<!-- x-release-please-start-version -->
+
 ```sh
-go get -u 'github.com/stainless-sdks/oxp-go@v0.0.1-alpha.0'
+go get -u 'github.com/OpenExecProtocol/oxp-go@v0.0.1-alpha.0'
 ```
+
+<!-- x-release-please-end -->
 
 ## Requirements
 
@@ -36,8 +44,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/stainless-sdks/oxp-go"
-	"github.com/stainless-sdks/oxp-go/option"
+	"github.com/OpenExecProtocol/oxp-go"
+	"github.com/OpenExecProtocol/oxp-go/option"
 )
 
 func main() {
@@ -145,7 +153,7 @@ client.Tools.List(context.TODO(), ...,
 )
 ```
 
-See the [full list of request options](https://pkg.go.dev/github.com/stainless-sdks/oxp-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/OpenExecProtocol/oxp-go/option).
 
 ### Pagination
 
@@ -351,7 +359,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/oxp-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/OpenExecProtocol/oxp-go/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

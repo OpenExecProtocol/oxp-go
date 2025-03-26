@@ -27,6 +27,7 @@ func TestUsage(t *testing.T) {
 	tool, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
 	if err != nil {
 		t.Error(err)
+		return
 	}
 	t.Logf("%+v\n", tool.Items)
 }

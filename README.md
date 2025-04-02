@@ -52,11 +52,11 @@ func main() {
 	client := oxp.NewClient(
 		option.WithBearerToken("My Bearer Token"), // defaults to os.LookupEnv("OXP_API_KEY")
 	)
-	tool, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
+	tools, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
 	if err != nil {
 		panic(err.Error())
 	}
-	fmt.Printf("%+v\n", tool.Items)
+	fmt.Printf("%+v\n", tools.Items)
 }
 
 ```
@@ -250,7 +250,7 @@ you need to examine response headers, status codes, or other details.
 ```go
 // Create a variable to store the HTTP response
 var response *http.Response
-tool, err := client.Tools.List(
+tools, err := client.Tools.List(
 	context.TODO(),
 	oxp.ToolListParams{},
 	option.WithResponseInto(&response),
@@ -258,7 +258,7 @@ tool, err := client.Tools.List(
 if err != nil {
 	// handle error
 }
-fmt.Printf("%+v\n", tool)
+fmt.Printf("%+v\n", tools)
 
 fmt.Printf("Status Code: %d\n", response.StatusCode)
 fmt.Printf("Headers: %+#v\n", response.Header)

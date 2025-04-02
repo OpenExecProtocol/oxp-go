@@ -24,10 +24,10 @@ func TestUsage(t *testing.T) {
 		option.WithBaseURL(baseURL),
 		option.WithBearerToken("My Bearer Token"),
 	)
-	tool, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
+	tools, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
 	if err != nil {
 		t.Error(err)
 		return
 	}
-	t.Logf("%+v\n", tool.Items)
+	t.Logf("%+v\n", tools.Items)
 }

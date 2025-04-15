@@ -2,8 +2,8 @@
 
 <a href="https://pkg.go.dev/github.com/OpenExecProtocol/oxp-go"><img src="https://pkg.go.dev/badge/github.com/OpenExecProtocol/oxp-go.svg" alt="Go Reference"></a>
 
-The Oxp Go library provides convenient access to [the Oxp REST
-API](https://openexecprotocol.org) from applications written in Go. The full API of this library can be found in [api.md](api.md).
+The Oxp Go library provides convenient access to the [Oxp REST API](https://openexecprotocol.org)
+from applications written in Go.
 
 It is generated with [Stainless](https://www.stainless.com/).
 

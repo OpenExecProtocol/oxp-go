@@ -370,6 +370,10 @@ func init() {
 		"",
 		apijson.UnionVariant{
 			TypeFilter: gjson.JSON,
+			Type:       reflect.TypeOf(ToolCallResponseResultObjectValueMap{}),
+		},
+		apijson.UnionVariant{
+			TypeFilter: gjson.JSON,
 			Type:       reflect.TypeOf(ToolCallResponseResultObjectValueArray{}),
 		},
 		apijson.UnionVariant{

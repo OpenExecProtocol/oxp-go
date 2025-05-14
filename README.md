@@ -2,8 +2,8 @@
 
 <a href="https://pkg.go.dev/github.com/OpenExecProtocol/oxp-go"><img src="https://pkg.go.dev/badge/github.com/OpenExecProtocol/oxp-go.svg" alt="Go Reference"></a>
 
-The Oxp Go library provides convenient access to [the Oxp REST
-API](https://openexecprotocol.org) from applications written in Go. The full API of this library can be found in [api.md](api.md).
+The Oxp Go library provides convenient access to the [Oxp REST API](https://openexecprotocol.org)
+from applications written in Go.
 
 It is generated with [Stainless](https://www.stainless.com/).
 
@@ -24,7 +24,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/OpenExecProtocol/oxp-go@v0.0.2'
+go get -u 'github.com/OpenExecProtocol/oxp-go@v0.1.0'
 ```
 
 <!-- x-release-please-end -->
@@ -52,11 +52,11 @@ func main() {
 	client := oxp.NewClient(
 		option.WithBearerToken("My Bearer Token"), // defaults to os.LookupEnv("OXP_API_KEY")
 	)
-	tool, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
+	tools, err := client.Tools.List(context.TODO(), oxp.ToolListParams{})
 	if err != nil {
 		panic(err.Error())
 	}
-	fmt.Printf("%+v\n", tool.Items)
+	fmt.Printf("%+v\n", tools.Items)
 }
 
 ```
@@ -250,7 +250,7 @@ you need to examine response headers, status codes, or other details.
 ```go
 // Create a variable to store the HTTP response
 var response *http.Response
-tool, err := client.Tools.List(
+tools, err := client.Tools.List(
 	context.TODO(),
 	oxp.ToolListParams{},
 	option.WithResponseInto(&response),
@@ -258,7 +258,7 @@ tool, err := client.Tools.List(
 if err != nil {
 	// handle error
 }
-fmt.Printf("%+v\n", tool)
+fmt.Printf("%+v\n", tools)
 
 fmt.Printf("Status Code: %d\n", response.StatusCode)
 fmt.Printf("Headers: %+#v\n", response.Header)
